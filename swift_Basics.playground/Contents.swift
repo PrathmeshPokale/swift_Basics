@@ -70,4 +70,48 @@ for char in sentence{
     print(char)
 }
 print("---------------------------------------")
-    
+
+//Character
+
+let singleCharacter = "P"
+
+print(singleCharacter)
+
+//array of character
+let arryaOfCharacter : [Character] = ["D","O","G"]
+print(arryaOfCharacter)
+
+//convert array of character into string
+var characterString = String(arryaOfCharacter)
+print(characterString)
+
+
+var questionMark = "?"      //here we used append fuction to add the character at the end of string
+characterString.append(questionMark)
+print(characterString)
+
+//interpolation of string
+var animalCount = 20
+print("Theer are \(animalCount) animal in the park")
+
+print("---------------------------------------")
+
+//array and iteration of array
+
+let Name: [String] = ["Vishal","Prajval","Mahesh","Ganesh","Rohan"]
+
+let marks: [Int] = [70,85,76,46,68]
+
+let percentage: [Double] = [70.62,87.65,67.61,54.78,62.14]
+
+for eachName in Name{
+    print("the name of student is \(eachName)")
+}
+
+for eachmark in marks{
+    print("\(eachmark) marks obtain ")
+}
+
+for eachpercentage in percentage{
+    print("the percentage are \(eachpercentage)")
+}
