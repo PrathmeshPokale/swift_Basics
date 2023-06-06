@@ -43,3 +43,54 @@ if cafeOne == cafeTwo{
 else{
     print("\(cafeOne) and \(cafeTwo) is not equal")
 }
+print("---------------------------------------")
+
+//Arryas
+
+var states : Array<String> = []//it is Longer(formal) way of declaration (Ematy)arrya contain string data type
+var cities : [String] = [] //it is shorter way of declaration (Ematy)array contain string data type
+//most prefer  var cities = [string]()
+
+
+cities.append("Pune")
+cities.append("Magarpatta")
+cities.append("Nagpur")
+
+print(cities)
+
+print("---------------------------------------")
+
+//adding the more value in an arrya by using append function
+var vegetables = ["Tomatoes","Cabbage","Cucumbar"]
+print("vegetables are \(vegetables)")
+
+vegetables.append("Celery") //adding value using append function
+print("vegetables are \(vegetables)")
+
+vegetables += ["Carrots","Potatoes"] //sencond method to add values
+print("vegetables are \(vegetables)")
+
+print("First vegetable = \(vegetables.first!)")//get first value in array
+
+print("Last vegetable = \(vegetables.last!)")//get last value in array
+
+//overwriting the values in an array
+
+vegetables[3...5] = ["Pumpkin","Spinach","Squesh"]
+print("vegetables are \(vegetables)")
+
+//insertion(adding) the new value in an arrya
+vegetables.insert("Apple", at: 0)
+print(vegetables)
+
+//removing(deleting) the value in an array
+vegetables.remove(at: 0)//enter the index value which you want to remove
+print("vegetables are \(vegetables)")
+
+
+//iteration of an array
+for vegetable in vegetables{
+    print("vegetable = \(vegetable)")
+}
+
+
